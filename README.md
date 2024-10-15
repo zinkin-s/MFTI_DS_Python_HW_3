@@ -14,7 +14,7 @@
 
 Для выполнения задания вам необходимы файлы train.csv, lectures.csv, questions.csv.
 
-train.csv
+**train.csv**
 
 row_id: (int64) ID code for the row.
 
@@ -38,7 +38,7 @@ Note that the time is the average time a user took to solve each question in the
 prior_question_had_explanation: (bool) Whether or not the user saw an explanation and the correct response(s) after answering the previous question bundle, ignoring any lectures in between. The value is shared across a single question bundle, and is null for a user's first question bundle or lecture. Typically the first several questions a user sees were part of an onboarding diagnostic test where they did not get any feedback.
  
 
-questions.csv: metadata for the questions posed to users.
+**questions.csv**: metadata for the questions posed to users.
 
 question_id: foreign key for the train/test content_id column, when the content type is question (0).
 bundle_id: code for which questions are served together.
@@ -49,7 +49,7 @@ part: the relevant section of the TOEIC test.
 tags: one or more detailed tag codes for the question. The meaning of the tags will not be provided, but these codes are sufficient for clustering the questions together.
  
 
-lectures.csv: metadata for the lectures watched by users as they progress in their education.
+**lectures.csv**: metadata for the lectures watched by users as they progress in their education.
 
 lecture_id: foreign key for the train/test content_id column, when the content type is lecture (1).
 
